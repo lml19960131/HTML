@@ -16,7 +16,7 @@
         let button = document.getElementById("btn");
         let form = document.getElementById('testform');
         if(txtName.value.trim() === ''){
-            let label = document.createElement('label');
+            let labels = document.createElement('label');
             labels.setAttribute('for','txt_name');
             form.insertBefore(labels,button);
             txtName.labels[1].innerHTML='请输入姓名';
