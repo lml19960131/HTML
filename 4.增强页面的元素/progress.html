@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>progress</title>
+</head>
+<body>
+下载进度：
+<progress value="0" max="100" id="progressBar"></progress>
+<input type="button" onclick="btn()" value="clickme">
+<script>
+    function btn() {
+        var i = 0;
+        function add() {
+            if(i<=100){
+                i++;
+                updateprogress(i);
+            }
+        }
+        setInterval(add, 100)
+    }
+    function updateprogress(newValue) {
+        let progressBar = document.getElementById('progressBar');
+        progressBar.value = newValue;
+    }
+</script>
+</body>
+</html>
