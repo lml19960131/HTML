@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>localStroage</title>
+</head>
+<body>
+    <textarea style="width: 200px; height: 200px;" id="text1"></textarea>
+    <button id="btn">save</button>
+<script>
+    window.onload = function () {
+        let text1 = document.getElementById('text1');
+        let btn = document.getElementById('btn');
+        //获取储存的数据是否为空,text时自用于存储数据的
+        if(localStorage.text) {
+            text1.value = localStorage.text;
+        }
+        btn.onclick = function () {
+            localStorage.text = text1.value;
+        }
+    }
+</script>
+</body>
+</html>
