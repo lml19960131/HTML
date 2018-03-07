@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <audio controls>
+        <source src="http://dl.stream.qqmusic.qq.com/C400003TRP3D18X72i.m4a?guid=5301976172&vkey=F3FFD85E79E4A467F9D6385E0A73FBE8221C05FA7853C222F3CB87A8FE5F477A9C249A3FBF29793CBC86BAD61C4A6B68763858A72F5B1E3E&uin=0&fromtag=999">
+    </audio>
+
+    <audio src="1.mp3.mp3" controls></audio>
+
+    <audio src="1.mp3.mp3" id="audio3"></audio>
+    <button onclick="play()" id="btn">播放/暂停</button>
+
+<script>
+    function play() {
+        let audio3 = document.getElementById('audio3');
+        let btn = document.getElementById('btn');
+        if(audio3.paused){
+            audio3.play();
+        } else {
+            audio3.pause();
+        }
+    }
+</script>
+</body>
+</html>

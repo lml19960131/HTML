@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>video</title>
+</head>
+<body>
+    <video id="video1">
+        <source src="http://111.41.50.145/music.qqvideo.tc.qq.com/AqoB7waLHmRU4k6T4q6CO05HE3fDwEdRQz72nOZMbxkc/c0025c297rz.p312.1.mp4?sdtfrom=v1070&type=mp4&vkey=A99589A7A09CEC51DD4D7D6F46ECFFA243367F39886E3677226308DF8DED70C39F5B16DC241B7F75E5F10BDD3F8AC69DA30319B4005C7FB15C96299FB9A55554F05E3E6243E36F09A3FC81699458DF9BABEFE89E18CA00C3E67FE60C54075681F8FD85241CCDEEE6EBFAAE23830F48A4&platform=70202&br=55&fmt=hd&sp=0&charge=0&vip=0&guid=7738EB53EB032AC021A458A780F8FEFE">
+    </video>
+    <button onclick="big()" id="btn">全屏</button>
+    <button onclick="small()">suo</button>
+<script>
+    function big() {
+        let video1 = document.getElementById('video1');
+        video1.width = window.innerWidth;
+        video1.height = window.innerHeight;
+    }
+    function small() {
+        let video1 = document.getElementById('video1');
+        video1.width = 500;
+        video1.height = 500;
+    }
+</script>
+</body>
+</html>
